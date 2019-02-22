@@ -1,0 +1,393 @@
+html,body,h1,h2,h3,h4,h5,h6,p,pre,ol,ul,li,form,input,textarea{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font: 16px/1.5 'Microsoft YaHei','sans-serif';
+    color: #333333;
+}
+a{
+    text-decoration: none;/*文本的修饰，上中下*/
+    color: #333;
+}
+/*默认样式*/
+
+.nav{
+    width: 100%;
+    height: 79px;
+    background: rgba(0,0,0,0.15);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.navContent{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-top:14px;
+}
+/*a标签是一个行内元素（行内标签）*/
+.logo a{
+    display: inline;
+    width: 100%;
+    height: 100%;
+}
+.logo a img{
+    width: 100%;
+    height: 100%;
+}
+.navList{
+    width: 602px;
+    height: 100%;
+    float: right;
+    margin: 0;
+}
+.navList li{
+    float: left;
+    width: 86px;
+    height: 100%;
+}
+.navList li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 79px;
+    font-size: 14px;
+    transition: color linear 0s/*过渡属性*/   /*linear线性*/
+}
+.navList li a:hover/*鼠标移入或点击*/{
+    color: #16b0dc;
+}
+/*nav导航*/
+
+.banner{
+    width:100%;
+    height: 720px;
+    background: #cccccc;
+}
+.banner a img{
+    width:100%;
+    height: 720px;
+}
+.yuandianhe{
+    width: 31px;
+    height: 15px;
+    position: absolute;
+    left: 744px;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.active{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+}
+.active2{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+/*banner*/
+
+.art{
+    width: 100%;
+    height: 600px;/*740-70*2*/
+    padding: 70px 0;
+    background: white;
+}
+.artContent{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.artContent h1{
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+}
+.artContent p.desc{
+    text-align: center;
+    color: #5e7387;
+    font-size: 16px;
+}
+.artContent .center{
+    width: 100%;
+    height: 476px;
+    background: white;
+    margin-top: 50px;
+}
+.center .centerLeft , .center .centerRight{
+    width: 75px;
+    height: 100%;
+    float: left;
+    line-height: 476px;
+    text-align: center;
+}
+.center .centerLeft img , .center .centerRight img{
+    width: 30px;
+    height: 30px;
+}
+.center .centerMiddle{
+    float: left;
+    width: 1020px;
+    height: 100%;
+    overflow: hidden;
+}
+.centerMiddle .centerContent{
+    width: 1400px;
+    height: 100%;
+}
+.centerContent .centerSlide {
+    float: left;
+    width: 320px;
+    height: 100%;
+    margin-right: 30px;
+}
+.centerSlide img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+.artContent .centerSlide h4{
+    text-align: center;
+    color:#37474f;
+    margin: 11px 0;
+}
+.artContent .centerSlide p{
+    font-size: 14px;
+    color: #757575;
+}
+.centerSlide .look{
+    width: 290px;
+    height: 22px;
+    padding: 6px 15px;
+    font-size: 14px;
+    color: white;
+    background: #f96868;
+    text-align: center;
+    line-height: 22px;
+}
+/*art*/
+
+.flower{
+    width: 100%;
+    height: 750px;
+    background: #f5f5f5;
+}
+.flowerContent{
+    width: 1170px;
+    height: 610px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.flowerContent h1{
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+}
+.flowerList{
+    width: 100%;
+    height: 560px;
+    margin-left: -40px;
+}
+.flowerList .flowerItem{
+    float: left;
+    width: 570px;
+    height: 110px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.flowerList .flowerItem:nth-of-type(2n){/*even偶数 同辈选择器 2n+1奇数*/
+    margin-right: 0;
+}
+.flowerItem .itemThumb{
+    width: 160px;
+    height: 96px;
+    /*margin-right: 20px;*/
+    /*margin-bottom: 14px;*/
+    float: left;
+}
+.itemThumb a,.itemThumb a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.flowerItem .itemInfo{
+    width: 390px;
+    height: 100%;
+    float: right;
+    font-size: 14px;
+    color: #76838f;
+}
+.itemInfo h2{
+    width: 100%;
+    height: 30px;
+}
+.itemInfo h2 a{
+    font-weight: 400;
+    font-size: 18px;
+    transition: all ease .5s;/*变化的曲线*/
+    display: block;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*省略号*/
+    white-space: nowrap;/*不换行*/
+    /*单行文本溢出变省略号*/
+}
+.itemInfo h2 a:hover{
+    color: #16b0dc;
+    text-decoration: underline;
+}
+.itemInfo p.infoDesc{
+    padding: 5px 0;
+    height:2.8em;/*2.8代表倍数，原是3，1.5*2*/
+    overflow: hidden;
+
+    position: relative;/*右下角*/
+}
+.itemInfo p.infoDesc::after{
+    content:'...';
+
+    position: absolute;/*绝对位置*/
+    right: 0;
+    bottom: 0;
+}
+/*flower*/
+
+.room{
+    width: 100%;
+    height:765px;
+    background: #fff;
+}
+.roomContent{
+    width: 1140px;
+    height: 100%;
+    background: #fff;
+    font-size: 36px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.h3{
+    font-size: 36px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 43px;
+}
+.chengli{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    line-height: 2;
+    padding-top: 80px;
+    margin: 0 0 23px;
+}
+.fanwei{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 10px;
+    white-space: normal;
+    margin: 0 0 11px;
+}
+.qianqi{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 5px;
+    white-space: normal;
+    margin: 0 0 11px;
+}
+.gongsi{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 5px;
+    white-space: normal;
+    margin: 0 0 11px;
+}
+.dizhi{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 5px;
+    white-space: normal;
+    margin: 0 0 11px;
+}
+.dianhua{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 5px;
+    white-space: normal;
+    margin: 0 0 11px;
+}
+.youxiang{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    padding: 5px;
+    white-space: normal;
+    margin: 0 0 40px;
+}
+.tupian{
+    text-align: center;
+    margin: 0 0 100px;
+}
+/*room*/
+
+.zong{
+    width: 100%;
+    height: 180px;
+    background: black;
+    margin-top: 250px;
+}
+.zong .xiao{
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-top: 1px solid #f0f2f5;
+}
+.last{
+    width: 100%;
+    height: 120px;
+    background: #f5f5f5;
+    color: #aaaaaa;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.last .tutu{
+    width: 100%;
+    height: 40px;
+}
+.last .tutu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.last a{
+    color: #62a8ea;
+    font-size:16px;
+}
+.last a:hover{
+    text-decoration: underline;
+    color: #62a8ea;
+    font-size:16px;
+}
+.last p{
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-weight: 200;
+}
+.last a img{
+    width: 20px;
+    height: 20px;
+    padding-left: 30px;
+}
+/*box*/
